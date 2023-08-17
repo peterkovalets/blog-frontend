@@ -1,3 +1,4 @@
+import Home from '../pages/Home';
 import Container from './Container';
 import Footer from './Footer';
 import Header from './Header';
@@ -8,7 +9,9 @@ function AppLayout() {
     <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       <Header />
       <Main>
-        <Container>Content</Container>
+        <Container>
+          <Home />
+        </Container>
       </Main>
       <Footer />
     </div>
