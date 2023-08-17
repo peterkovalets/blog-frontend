@@ -1,4 +1,4 @@
-import Home from '../pages/Home';
+import { Outlet } from 'react-router-dom';
 import Container from './Container';
 import Footer from './Footer';
 import Header from './Header';
@@ -10,7 +10,7 @@ function AppLayout() {
       <Header />
       <Main>
         <Container>
-          <Home />
+          <Outlet />
         </Container>
       </Main>
       <Footer />

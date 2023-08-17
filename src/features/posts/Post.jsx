@@ -1,12 +1,21 @@
+import { Link } from 'react-router-dom';
 import { formatDate } from '../../utils/helpers';
 
 function Post({ post }) {
-  const { title, imageUrl, createdAt, author, tags, numViews, numComments } =
-    post;
+  const {
+    id,
+    title,
+    imageUrl,
+    createdAt,
+    author,
+    tags,
+    numViews,
+    numComments,
+  } = post;
 
   return (
     <li>
-      <a href="#">
+      <Link to={`/posts/${id}`}>
         <div className="overflow-hidden rounded-md border-2 border-slate-200 bg-slate-50 transition-colors duration-300 hover:border-slate-400">
           <img src={imageUrl} alt={title} className="w-full" />
           <div className="flex gap-3 p-6">
@@ -74,7 +83,7 @@ function Post({ post }) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </li>
   );
 }

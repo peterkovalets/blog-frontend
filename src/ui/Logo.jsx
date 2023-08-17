@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 function Logo() {
   return (
-    <a href="#" className="text-xl font-medium uppercase tracking-wide">
+    <Link to="/" className="text-xl font-medium uppercase tracking-wide">
       Blog
-    </a>
+    </Link>
   );
 }
 
