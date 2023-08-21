@@ -4,7 +4,7 @@ function TagItem({ tag }) {
   return (
     <li className="text-lg">
       <Link
-        to={`/tag/${tag}`}
+        to={`/tags/${tag}`}
         className="block p-2 pl-4 transition-colors duration-300 hover:bg-slate-200"
       >
         # {tag}

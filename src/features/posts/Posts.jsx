@@ -5,7 +5,7 @@ const fakePosts = [
     id: 1,
     title: 'Fake post #1',
     imageUrl: 'https://placehold.co/500x200',
-    author: {
+    user: {
       name: 'Peter',
       avatarUrl: 'https://placehold.co/24',
     },
@@ -17,8 +17,7 @@ const fakePosts = [
   {
     id: 2,
     title: 'Fake post #2',
-    imageUrl: 'https://placehold.co/1280x600',
-    author: {
+    user: {
       name: 'John',
       avatarUrl: 'https://placehold.co/24',
     },
