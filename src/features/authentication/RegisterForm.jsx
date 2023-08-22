@@ -4,6 +4,7 @@ import Form from '../../ui/Form';
 import LinkButton from '../../ui/LinkButton';
 import FormRow from '../../ui/FormRow';
 import Input from '../../ui/Input';
+import PasswordInput from '../../ui/PasswordInput';
 
 function RegisterForm() {
   const { register, handleSubmit, formState, getValues } = useForm();
@@ -33,6 +34,10 @@ function RegisterForm() {
                 value: 30,
                 message: 'Maximum name length is 30 symbols',
               },
+              pattern: {
+                value: /[a-zA-Z]+/,
+                message: 'Name should contain only latin characters',
+              },
             })}
           />
         </FormRow>
@@ -52,8 +57,7 @@ function RegisterForm() {
           />
         </FormRow>
         <FormRow error={errors?.password?.message}>
-          <Input
-            type="password"
+          <PasswordInput
             placeholder="Create password"
             error={errors?.password}
             {...register('password', {
@@ -66,8 +70,7 @@ function RegisterForm() {
           />
         </FormRow>
         <FormRow error={errors?.passwordConfirm?.message}>
-          <Input
-            type="password"
+          <PasswordInput
             placeholder="Confirm password"
             error={errors?.passwordConfirm}
             {...register('passwordConfirm', {
