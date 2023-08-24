@@ -8,7 +8,7 @@ function Header() {
       <Container>
         <nav className="flex items-center justify-between">
           <Logo />
-          <Button to="/register" type="primary">
+          <Button to="/register" variant="primary">
             Sign Up
           </Button>
         </nav>

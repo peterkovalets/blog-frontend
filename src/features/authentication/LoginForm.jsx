@@ -33,7 +33,7 @@ function LoginForm() {
           autoComplete="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button type="primary">Login</Button>
+        <Button variant="primary">Login</Button>
       </div>
 
       <p className="text-slate-500">

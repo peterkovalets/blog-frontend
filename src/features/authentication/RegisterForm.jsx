@@ -22,7 +22,7 @@ function RegisterForm() {
         <FormRow error={errors?.name?.message}>
           <Input
             type="text"
-            placeholder="Full name"
+            placeholder="Name"
             error={errors?.name}
             {...register('name', {
               required: 'This field is required',
@@ -79,7 +79,7 @@ function RegisterForm() {
             })}
           />
         </FormRow>
-        <Button type="primary">Create account</Button>
+        <Button variant="primary">Create account</Button>
       </div>
 
       <p className="text-slate-500">
